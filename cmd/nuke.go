@@ -52,10 +52,10 @@ func (n *Nuke) Run() error {
 		time.Sleep(forceSleep)
 	} else {
 		fmt.Printf("Do you want to continue? Enter account alias to continue.\n")
-		err = Prompt(n.Account.Alias())
-		if err != nil {
-			return err
-		}
+		// err = Prompt(n.Account.Alias())
+		// if err != nil {
+		// 	return err
+		// }
 	}
 
 	err = n.Scan()
@@ -80,10 +80,10 @@ func (n *Nuke) Run() error {
 		time.Sleep(forceSleep)
 	} else {
 		fmt.Printf("Do you want to continue? Enter account alias to continue.\n")
-		err = Prompt(n.Account.Alias())
-		if err != nil {
-			return err
-		}
+		// err = Prompt(n.Account.Alias())
+		// if err != nil {
+		// 	return err
+		// }
 	}
 
 	failCount := 0
